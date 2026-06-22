@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Bank Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Welcome to Dashboard</h1>
+
+<div class="container">
+
+    <div class="box">
+        <h2>Deposit</h2>
+        <button onclick="window.location.href='deposit.html'">
+            Go to Deposit
+        </button>
+    </div>
+
+    <div class="box">
+        <h2>Withdraw</h2>
+        <button onclick="window.location.href='withdraw.html'">
+            Go to Withdraw
+        </button>
+    </div>
+
+    <div class="box">
+        <h2>Transfer</h2>
+        <button onclick="window.location.href='transfer.html'">
+            Go to Transfer
+        </button>
+    </div>
+
+    <div class="box">
+        <h2>Transaction History</h2>
+        <button onclick="window.location.href='history.html'">
+            View History
+        </button>
+    </div>
+
+    <div class="box">
+        <h2>Check Balance</h2>
+        <button onclick="window.location.href='balance.html'">
+            Check Balance
+        </button>
+    </div>
+    <div class="box">
+    <h2>PDF Statement</h2>
+
+    <button onclick="window.location.href='statement.html'">
+        Generate Statement
+    </button>
+</div>
+    
+
+    <div class="box">
+        <h2>Logout</h2>
+        <button onclick="logout()">
+            Logout
+        </button>
+    </div>
+
+</div>
+
+<script>
+function logout(){
+    alert("Logged Out Successfully");
+    window.location.href="login.html";
+}
+</script>
+
+</body>
+</html>

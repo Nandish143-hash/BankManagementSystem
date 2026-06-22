@@ -1,0 +1,130 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body Background */
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Login/Register Box */
+.box {
+    width: 420px;
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(15px);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 10px 30px rgba(0,0,0,0.4);
+    text-align: center;
+    color: white;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* Heading */
+.box h2 {
+    margin-bottom: 20px;
+    font-size: 28px;
+    color: #00f5d4;
+}
+
+/* Input Fields */
+input {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background: rgba(255,255,255,0.2);
+    color: white;
+    font-size: 15px;
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 15px;
+    background: linear-gradient(45deg, #00c6ff, #0072ff);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+button:hover {
+    transform: scale(1.05);
+    background: linear-gradient(45deg, #ff6a00, #ee0979);
+}
+
+/* Dashboard Title */
+h1 {
+    color: white;
+    margin-bottom: 30px;
+    font-size: 40px;
+    text-shadow: 2px 2px 8px black;
+}
+
+/* Dashboard Layout */
+.dashboard-container {
+    width: 90%;
+    max-width: 1100px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+/* Dashboard Cards */
+.card {
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(12px);
+    padding: 30px;
+    border-radius: 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 8px 20px rgba(0,0,0,0.4);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+/* Card Heading */
+.card h2 {
+    margin-bottom: 20px;
+    color: #00f5d4;
+}
+
+/* Dashboard Buttons */
+.card button {
+    width: auto;
+    padding: 12px 25px;
+}
+
+/* Responsive */
+@media(max-width:768px){
+    .dashboard-container{
+        grid-template-columns: 1fr;
+    }
+
+    .box{
+        width: 90%;
+    }
+}
